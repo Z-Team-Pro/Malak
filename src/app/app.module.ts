@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { OneComponent } from './one/one.component';
 import { TwoComponent } from './two/two.component';
+import { ThreeComponent } from './three/three.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { TwoComponent } from './two/two.component';
     AppComponent,
     HomeComponent,
     OneComponent,
-    TwoComponent
+    TwoComponent,
+    ThreeComponent
   ],
   imports: [
     BrowserModule,

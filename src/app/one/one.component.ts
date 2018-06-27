@@ -7,18 +7,17 @@ import { Component, OnInit ,Input,Output, EventEmitter } from '@angular/core';
 })
 export class OneComponent implements OnInit {
   @Output() out = new  EventEmitter<string>();
-  @Input() fromtwo: string;
-  data:string;
+  @Input() datain: string;
+ 
   constructor() { 
-    this.data=this.fromtwo;
+   
 
   }
 
   ngOnInit() {
   }
   inputchange() {
-    this.out.emit(this.fromtwo);
-    console.log('emit vaule ');
+    this.out.emit(this.datain);
   }
 
 }

@@ -2,7 +2,9 @@
   home works!
 </p>
   <hr>
-<app-one (out)="getFromOne($event)" [fromtwo]="datafrom2"> </app-one>
+<app-one (out)="getFromOne($event)" [datain]="data"> </app-one>
 
 <hr>
-<app-two (out2)="getFromtwo($event)" [fromone]="datafrom1" > </app-two>
+<app-two (out2)="getFromtwo($event)" [datain]="data" > </app-two>
+<hr>
+<app-three (out3)="getFromthree($event)" [datain]="data" > </app-three>

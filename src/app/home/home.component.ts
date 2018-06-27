@@ -6,7 +6,7 @@ import { Component, OnInit ,Input } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  datafrom1:string;
+  data:string;
   datafrom2:string;
   constructor() { }
 
@@ -15,13 +15,18 @@ export class HomeComponent implements OnInit {
 
 
   getFromOne(data:string){
-    this.datafrom1= data;
+    this.data= data;
     console.log('data from one',data);
 
   }
 
   getFromtwo(data:string){
-    this.datafrom2= data;
+    this.data= data;
+    console.log('data from two',data);
+
+  }
+  getFromthree(data:string){
+    this.data= data;
     console.log('data from two',data);
 
   }
